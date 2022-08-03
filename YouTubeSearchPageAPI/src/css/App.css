@@ -1,0 +1,125 @@
+body {
+  background: rgb(0, 0, 0);
+}
+p {
+  color: white;
+  font-size: 15px;
+}
+
+.sidemenu {
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgb(60, 59, 59);
+  overflow-x: scroll;
+  padding-top: 56px;
+  padding-left: 10px;
+  justify-content: center;
+}
+.sidemenu a {
+  color: white;
+  font-size: 14px;
+  font-family: Arial sans-serif;
+  max-width: 100%;
+  text-decoration-line: underline;
+}
+.sidemenu a:after {
+  content: "";
+  display: block;
+  height: 50px;
+  width: 1px;
+}
+.sidemenu img{
+  width: 50px;
+  height: 50px;
+  display: block;
+  background-color: transparent;
+}
+.sidemenu img:after{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 1px;
+}
+
+.main {
+  margin-left: 100px;
+  margin-top: 56px;
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+.searchBar {
+  border: 1px solid #999;
+  border-radius: 0px;
+  font: inherit;
+  outline: none;
+  width: 80%;
+  height: 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  text-emphasis-color: white;
+  color: white;
+  font-size: 15px;
+  padding-left: 20px;
+}
+.searchBar :focus{
+color: rgb(255, 255, 255);
+}
+
+.videoitem {
+  width: 685px;
+  height: 186.69px;
+  display: table;
+}
+
+.videoitem::after{
+  content: "";
+  width: 5px;
+  height: 10px;
+  display: block;
+}
+
+.videoitem_image {
+  border: 1px solid rgb(34, 33, 33); 
+  display: inline-block;
+}
+.videoitem_image img {
+  width: 334.5px;
+  height: 186.69px;
+  display: inline-block;
+}
+
+.videoitem_text {
+  border: 1px solid rgb(34, 33, 33); 
+  width: 334.5px;
+  height: 187.69px;
+  display: inline-block;
+  vertical-align: top;
+}
+.videoitem_text a{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.videoitem_text p{
+  font-size: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.videoitem_channel img{
+  width: 36px;
+  height: 36px;
+  border-radius: 200px;
+  display: inline-block;
+}
+.videoitem_channel p{
+  font-size: 10px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
